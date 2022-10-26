@@ -17,4 +17,8 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+const port = 8080;
+app.listen(port);
+console.log(`App running on http://localhost:${port}`);
+
 export default app;
